@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@layer base {
+
+  html { scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: #a9a3bf #0d0b14; }
+  body { font-family: 'Inter', -apple-system, sans-serif; overflow-x: hidden; }
+  ::selection { background-color: rgba(192, 132, 252, 0.15); color: #fdfcff; }
+}
+
+@layer utilities {
+  .bg-orbs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.4;
+    animation: float 20s infinite ease-in-out alternate;
+  }
+  
+  .orb-1 { width: 400px; height: 400px; background: rgba(192, 132, 252, 0.18); top: -10%; left: -10%; }
+  .orb-2 { width: 500px; height: 500px; background: rgba(56, 189, 248, 0.12); bottom: -20%; right: -10%; animation-delay: -5s; }
+  
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+  }
+
+  .glass-panel {
+    background: rgba(18, 14, 28, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  }
+}
