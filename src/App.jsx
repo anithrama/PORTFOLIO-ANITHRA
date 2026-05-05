@@ -146,7 +146,7 @@ const Home = () => (
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="flex-1 w-full max-w-[400px] relative z-10 hidden md:block"
+        className="flex-1 w-full max-w-[280px] md:max-w-[400px] relative z-10 block mt-10 md:mt-0"
       >
         <div className="relative w-full aspect-square rounded-full flex items-center justify-center p-2">
           <div className="absolute inset-0 rounded-full border-2 border-dashed border-accent animate-[spin_10s_linear_infinite] opacity-50"></div>
@@ -411,7 +411,7 @@ const Certifications = () => (
     className="py-[30px] pb-[100px] max-w-[1000px] mx-auto z-10 relative"
   >
     <SectionHeader title="Certifications" />
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] max-[480px]:grid-cols-1 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {certifications.map((cert, i) => (
         <motion.div 
           key={i}
@@ -540,11 +540,11 @@ function AppContent() {
         <div className="orb orb-3 hidden md:block"></div>
       </div>
 
-      <div className="px-[150px] max-[1080px]:px-[100px] max-[768px]:px-[50px] max-[480px]:px-[25px] relative z-10">
+      <div className="px-[150px] max-[1080px]:px-[100px] max-[768px]:px-[30px] max-[480px]:px-[15px] relative z-10 overflow-hidden">
 
-        <nav className={`fixed top-0 left-0 w-full px-[50px] py-[25px] flex items-center z-[100] transition-all duration-300 bg-transparent ${scrolled ? 'py-[15px] bg-[#0d0b14e6] backdrop-blur-[16px] shadow-[0_10px_30px_-10px_rgba(0,0,0,0.8)] border-b border-white/5 max-[768px]:py-2.5 max-[768px]:px-[15px]' : ''} max-[768px]:p-[15px] max-[768px]:flex-row max-[768px]:max-w-full`}>
-          <div className="w-full max-w-[1400px] mx-auto flex justify-end items-center max-[768px]:justify-end">
-            <ul className="flex flex-row gap-2 max-[768px]:w-full max-[768px]:justify-end max-[480px]:gap-0">
+        <nav className={`fixed top-0 left-0 w-full px-[50px] py-[25px] flex items-center z-[100] transition-all duration-300 bg-transparent ${scrolled ? 'py-[15px] bg-[#0d0b14e6] backdrop-blur-[16px] shadow-[0_10px_30px_-10px_rgba(0,0,0,0.8)] border-b border-white/5 max-[768px]:py-2.5 max-[768px]:px-[15px]' : ''} max-[768px]:p-[15px] max-[768px]:flex-col max-[768px]:max-w-full`}>
+          <div className="w-full max-w-[1400px] mx-auto flex justify-center items-center">
+            <ul className="flex flex-row gap-2 max-[768px]:w-full max-[768px]:overflow-x-auto max-[768px]:justify-start max-[768px]:pb-2 max-[768px]:scrollbar-hide max-[480px]:gap-1">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.path || (item.path === '/' && location.pathname === '');
                 return (
