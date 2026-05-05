@@ -12,8 +12,10 @@ export default {
         'bg-lightest': '#2a2342',
         'text-light': '#fdfcff',
         'text-dim': '#a9a3bf',
-        'accent': '#c084fc',
-        'accent-tint': 'rgba(192, 132, 252, 0.15)',
+        'accent': '#10b981', // Mint Green
+        'accent-secondary': '#06b6d4', // Cyan
+        'accent-tertiary': '#8b5cf6', // Purple
+        'accent-tint': 'rgba(16, 185, 129, 0.15)',
         'glass-bg': 'rgba(18, 14, 28, 0.7)',
       },
       fontFamily: {

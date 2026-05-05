@@ -67,16 +67,16 @@ export const projects = [
   {
     title: "PWD Management System",
     tech: ["HTML", "CSS", "JavaScript", "Django", "MySQL"],
-    link: "https://github.com/anithrama/PROJECT",
+    link: "https://github.com/anithrama/PWD.git",
     details: [
       "Developed system for managing departmental records.",
       "Implemented CRUD operations and database integration."
     ]
   },
   {
-    title: "E-Commerce Web Application",
+    title: "GIFTOS - Fashion Store Web Application",
     tech: ["React", "HTML", "CSS", "JavaScript", "Django"],
-    link: "https://github.com/anithrama/PROJECT",
+    link: "https://github.com/anithrama/GIFTOS.git",
     details: [
       "Developed product listing, shopping cart and order management system.",
       "Integrated React frontend with Django REST APIs."
@@ -85,7 +85,7 @@ export const projects = [
   {
     title: "Medical Crisis Management System",
     tech: ["HTML", "CSS", "JavaScript", "Django"],
-    link: "https://github.com/anithrama/PROJECT",
+    link: "https://github.com/anithrama/MEDICALCRISIS.git",
     details: [
       "Implemented emergency case tracking and reporting system.",
       "Designed responsive frontend and backend integration."
@@ -112,18 +112,27 @@ export const skills = {
 
 export const certifications = [
   {
-    title: "Python Full Stack Developer Certification",
-    provider: "Synnefo Solutions, Kochi",
-    date: "Jun 2023 -- Dec 2023"
+    title: "Junior Full Stack Developer Internship",
+    provider: "Camerin Innovate, Kochi",
+    date: "Jan 2026 - Mar 2026",
+    image: "/certificates/camerin-innovate.jpg"
   },
   {
-    title: "Angular & Django Certification",
-    provider: "Faith Infotech Academy, Technopark, Trivandrum",
-    date: "Jun 2025"
-  },
-  {
-    title: "Full Stack Web Development (MERN Stack)",
+    title: "Full Stack Web Development - MERN stack with A+ Grade",
     provider: "Capital Infotech, Thiruvalla",
-    date: "Nov 2024"
+    date: "April 2025",
+    image: "/certificates/capital-infotech.jpg"
+  },
+  {
+    title: "IT Industry Practice Program",
+    provider: "Faith Infotech Academy, Technopark Campus",
+    date: "June 2025",
+    image: "/certificates/faith-infotech.jpg"
+  },
+  {
+    title: "Python Full Stack Web Developer Internship",
+    provider: "Synnefo Solutions, Cochin",
+    date: "Nov 2023 - Dec 2023",
+    image: "/certificates/synnefo-solutions.jpg"
   }
 ];
